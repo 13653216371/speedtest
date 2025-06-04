@@ -11,7 +11,7 @@ This is a very lightweight speed test implemented in Javascript, using XMLHttpRe
 [Take a speed test](https://librespeed.org)
 
 ## Compatibility
-
+1
 All modern browsers are supported: IE11, latest Edge, latest Chrome, latest Firefox, latest Safari.
 Works with mobile versions too.
 
