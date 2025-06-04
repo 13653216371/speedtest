@@ -27,6 +27,7 @@ fi
 
 # Set up backend side for standlone modes
 if [[ "$MODE" == "standalone" || "$MODE" == "dual" ]]; then
+  cp -r /speedtest/backend/* /var/www/html
   cp -r /speedtest/backend/ /var/www/html/backend
   if [ ! -z "$IPINFO_APIKEY" ]; then
     sed -i s/\$IPINFO_APIKEY\ =\ \'\'/\$IPINFO_APIKEY\ =\ \'$IPINFO_APIKEY\'/g /var/www/html/backend/getIP_ipInfo_apikey.php
